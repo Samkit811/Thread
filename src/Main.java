@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Main method start");
+        System.out.println("Main method start" + " at time: " + System.currentTimeMillis());
 
         SharedResource sharedResource = new SharedResource();
 
@@ -16,7 +16,7 @@ public class Main {
         producerThread.start();
         consumerThread.start();
 
-        System.out.println("Main method ends");
+        System.out.println("Main method ends" + " at time: " + System.currentTimeMillis());
 
     }
 }
